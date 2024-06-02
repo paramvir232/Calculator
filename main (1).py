@@ -35,8 +35,7 @@ def calculator():
   while CalculateAgain:
     operation_Symbol = input("Enter a Symbol from above line : ")
     num2 = float(input("Enter next number : "))
-    function = operations[
-        operation_Symbol]  #function = operation['+'] -----> function = add
+    function = operations[operation_Symbol]  #function = operation['+'] -----> function = add
     total = round(function(num1, num2),2)  #total = add(num1,num2)
     print(f"{num1} {operation_Symbol} {num2} = {total}")
     num1 = total
